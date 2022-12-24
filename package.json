@@ -40,7 +40,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +67,8 @@
     "@types/html-to-draftjs": "^1.4.0",
     "@types/react-draft-wysiwyg": "^1.13.4",
     "@types/redux-logger": "^3.0.9",
-    "prettier": "2.8.1"
+    "husky": "^8.0.0",
+    "prettier": "2.8.1",
+    "pretty-quick": "^3.1.3"
   }
 }
