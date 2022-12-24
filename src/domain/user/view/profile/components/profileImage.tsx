@@ -1,8 +1,8 @@
-import React from 'react'
-import { UserModel } from '../../../model/user.model'
+import React from 'react';
+import { UserModel } from '../../../model/user.model';
 interface Props {
     userModel: UserModel;
-    children?: JSX.Element | JSX.Element[]
+    children?: JSX.Element | JSX.Element[];
 }
 
 const ProfileImage: React.FC<Props> = ({ userModel, children }) => {
@@ -10,12 +10,17 @@ const ProfileImage: React.FC<Props> = ({ userModel, children }) => {
     if (profileImage) {
         return (
             <div className="col-lg-2 col-md-3 text-md-start text-center">
-                <img src={userModel.pluck('image') || "assets/images/client/05.jpg"} 
-                className="avatar avatar-large border rounded-circle shadow d-block mx-auto" 
-                style={{ objectFit: 'cover' }} />
+                <img
+                    src={
+                        userModel.pluck('image') ||
+                        'assets/images/client/05.jpg'
+                    }
+                    className="avatar avatar-large border rounded-circle shadow d-block mx-auto"
+                    style={{ objectFit: 'cover' }}
+                />
                 {children || null}
             </div>
-        )
+        );
     }
 
     let profileText = `${userModel.pluck('username')[0]}`;
@@ -26,7 +31,7 @@ const ProfileImage: React.FC<Props> = ({ userModel, children }) => {
                 {children || null}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProfileImage
+export default ProfileImage;

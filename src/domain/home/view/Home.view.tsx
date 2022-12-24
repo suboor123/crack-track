@@ -1,7 +1,7 @@
-import Topics from '../../topics/view/topics.view'
-import Hero from './HomeComponents/Hero.component'
-import MidBanner from './HomeComponents/MidBanner.component'
-import PopularQuestions from './HomeComponents/PopularQuestions.component'
+import Topics from '../../topics/view/topics.view';
+import Hero from './HomeComponents/Hero.component';
+import MidBanner from './HomeComponents/MidBanner.component';
+import PopularQuestions from './HomeComponents/PopularQuestions.component';
 
 const Home = () => {
     return (
@@ -12,8 +12,7 @@ const Home = () => {
                 <MidBanner />
             </section>
         </>
+    );
+};
 
-    )
-}
-
-export default Home
+export default Home;

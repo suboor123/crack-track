@@ -1,21 +1,20 @@
 #initial-loader .rs-loader-content {
     color: black !important;
-  }
-  
-  #initial-loader .rs-loader-spin::after {
+}
+
+#initial-loader .rs-loader-spin::after {
     border-width: 3px;
     border-style: solid;
     border-color: rgb(41, 83, 168) transparent transparent !important;
     animation: loaderSpin 0.6s infinite linear;
-  }
-  
-  #initial-loader .rs-loader .rs-loader-spin::after {
+}
+
+#initial-loader .rs-loader .rs-loader-spin::after {
     width: 50px !important;
     height: 50px !important;
-  }
-  #initial-loader .rs-loader .rs-loader-spin::before,
-  #initial-loader .rs-loader .rs-loader-spin::after {
+}
+#initial-loader .rs-loader .rs-loader-spin::before,
+#initial-loader .rs-loader .rs-loader-spin::after {
     width: 50px !important;
     height: 50px !important;
-  }
-  
+}

@@ -1,0 +1,14 @@
+# Ignore artifacts:
+build
+coverage
+assets
+node_modules
+
+# Ignore all HTML files:
+*.html
+*.svg
+*.jpg
+*.png
+*.jpeg
+*.json
+*.yml

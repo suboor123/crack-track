@@ -1,9 +1,8 @@
-import { Message, Notification, toaster } from "rsuite";
+import { Message, Notification, toaster } from 'rsuite';
 
-type NotificationType = 'info' | 'success' | 'warning' | 'error'
+type NotificationType = 'info' | 'success' | 'warning' | 'error';
 
 export class Toastr {
-
     private message: string;
     private header: string | undefined;
 
@@ -12,17 +11,17 @@ export class Toastr {
         this.header = header;
     }
 
-    private createMessage = (type: NotificationType) =>
-    (<Notification
-        header={this.header || type} type={type} closable>
-        {this.message}
-    </Notification>);
+    private createMessage = (type: NotificationType) => (
+        <Notification header={this.header || type} type={type} closable>
+            {this.message}
+        </Notification>
+    );
 
-
-    static fire = (message: string, header?: string) => new Toastr(message, header)
+    static fire = (message: string, header?: string) =>
+        new Toastr(message, header);
 
     private exec(type: NotificationType) {
-        toaster.push(this.createMessage(type), { placement: 'topEnd' })
+        toaster.push(this.createMessage(type), { placement: 'topEnd' });
     }
 
     /**

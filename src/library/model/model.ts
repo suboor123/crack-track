@@ -1,13 +1,12 @@
 export class Model<T> {
+    private modelEntity: T;
 
-    private modelEntity:T;
-    
     constructor(entity: T) {
-        this.modelEntity = entity
-     }
+        this.modelEntity = entity;
+    }
 
     pluck<K extends keyof T>(key: K) {
-        return this.modelEntity[key]
+        return this.modelEntity[key];
     }
 
     pluckAll() {
@@ -15,6 +14,6 @@ export class Model<T> {
     }
 
     set<K extends keyof T>(key: K, value: T[K]) {
-        this.modelEntity[key] = value
+        this.modelEntity[key] = value;
     }
 }

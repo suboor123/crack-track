@@ -27,7 +27,7 @@ button {
     font-size: 64px !important;
 }
 
-.no-profile-image h3{
+.no-profile-image h3 {
     font-size: 64px !important;
     line-height: 127px !important;
 }
@@ -36,20 +36,18 @@ button {
     background-color: rgba(0, 0, 0, 0.717);
 }
 
-#topnav .navigation-menu>li.active>a, #topnav .navigation-menu>li:hover>a {
+#topnav .navigation-menu > li.active > a,
+#topnav .navigation-menu > li:hover > a {
     color: inherit !important;
-
 }
 
 .pointer {
     cursor: pointer;
 }
 
-
 #topnav {
     z-index: 3 !important;
 }
-
 
 .opaque-bg {
     backdrop-filter: blur(6px);
@@ -64,7 +62,7 @@ button {
     padding: 10px !important;
 }
 
-#predefined_tags .rs-tag+.rs-tag {
+#predefined_tags .rs-tag + .rs-tag {
     margin-left: 10px;
     margin-top: 10px !important;
 }
@@ -85,7 +83,6 @@ button {
 #profile-section .section {
     padding: 0px !important;
 }
-
 
 .demo-wrapper {
     background-color: white;
@@ -114,7 +111,7 @@ button {
 }
 
 .rdw-dropdown-selectedtext {
-   color: gray;
+    color: gray;
 }
 
 .rdw-embedded-modal {
@@ -253,12 +250,13 @@ button {
     --rs-bg-overlay: #fff;
     --rs-bg-well: #f7f7fa;
     --rs-bg-active: #2a4cbf !important;
-    --rs-bg-backdrop: rgba(39,44,54,0.3);
+    --rs-bg-backdrop: rgba(39, 44, 54, 0.3);
     --rs-state-hover-bg: #f2faff;
-    --rs-color-focus-ring: rgba(52,152,255,0.25);
-    --rs-state-focus-shadow: 0 0 0 3px rgba(52,152,255,0.25);
-    --rs-state-focus-outline: 3px solid rgba(52,152,255,0.25);
-    --rs-shadow-overlay: 0 4px 4px rgba(0,0,0,0.12),0 0 10px rgba(0,0,0,0.06);
+    --rs-color-focus-ring: rgba(52, 152, 255, 0.25);
+    --rs-state-focus-shadow: 0 0 0 3px rgba(52, 152, 255, 0.25);
+    --rs-state-focus-outline: 3px solid rgba(52, 152, 255, 0.25);
+    --rs-shadow-overlay: 0 4px 4px rgba(0, 0, 0, 0.12),
+        0 0 10px rgba(0, 0, 0, 0.06);
     --rs-btn-default-bg: #f7f7fa;
     --rs-btn-default-text: #575757;
     --rs-btn-default-hover-bg: #e5e5ea;
@@ -292,12 +290,12 @@ button {
     --rs-iconbtn-primary-activated-addon: #1675e0;
     --rs-iconbtn-primary-pressed-addon: #0a5dc2;
     --rs-divider-border: #e5e5ea;
-    --rs-loader-ring: rgba(247,247,250,0.8);
+    --rs-loader-ring: rgba(247, 247, 250, 0.8);
     --rs-loader-rotor: #a6a6a6;
-    --rs-loader-backdrop: hsla(0,0%,100%,0.9);
-    --rs-loader-ring-inverse: rgba(247,247,250,0.3);
+    --rs-loader-backdrop: hsla(0, 0%, 100%, 0.9);
+    --rs-loader-ring-inverse: rgba(247, 247, 250, 0.3);
     --rs-loader-rotor-inverse: #fff;
-    --rs-loader-backdrop-inverse: rgba(39,44,54,0.83);
+    --rs-loader-backdrop-inverse: rgba(39, 44, 54, 0.83);
     --rs-message-success-header: var(--rs-text-heading);
     --rs-message-success-text: var(--rs-text-primary);
     --rs-message-success-icon: #4caf50;
@@ -324,11 +322,12 @@ button {
     --rs-placeholder-active: #e5e5ea;
     --rs-dropdown-divider: #e5e5ea;
     --rs-dropdown-item-bg-hover: #f2faff;
-    --rs-dropdown-item-bg-active: rgba(242,250,255,0.5);
+    --rs-dropdown-item-bg-active: rgba(242, 250, 255, 0.5);
     --rs-dropdown-item-text-active: #1675e0;
     --rs-dropdown-header-text: #a6a6a6;
-    --rs-dropdown-shadow: 0 0 10px rgba(0,0,0,0.06),0 4px 4px rgba(0,0,0,0.12);
-    --rs-menuitem-active-bg: rgba(204,233,255,0.5);
+    --rs-dropdown-shadow: 0 0 10px rgba(0, 0, 0, 0.06),
+        0 4px 4px rgba(0, 0, 0, 0.12);
+    --rs-menuitem-active-bg: rgba(204, 233, 255, 0.5);
     --rs-menuitem-active-text: #1675e0;
     --rs-steps-border: #8e8e93;
     --rs-steps-state-finish: #2a4cbf !important;
@@ -382,7 +381,7 @@ button {
     --rs-input-bg: #fff;
     --rs-input-focus-border: #2a4cbf !important;
     --rs-input-disabled-bg: #f7f7fa;
-    --rs-listbox-option-hover-bg: rgba(204,233,255,0.5);
+    --rs-listbox-option-hover-bg: rgba(204, 233, 255, 0.5);
     --rs-listbox-option-hover-text: #1675e0;
     --rs-listbox-option-selected-text: #1675e0;
     --rs-listbox-option-selected-bg: #f2faff;
@@ -400,7 +399,7 @@ button {
     --rs-rate-symbol-checked: #ffb300;
     --rs-toggle-bg: #d9d9d9;
     --rs-toggle-thumb: #fff;
-    --rs-toggle-loader-ring: rgba(247,247,250,0.3);
+    --rs-toggle-loader-ring: rgba(247, 247, 250, 0.3);
     --rs-toggle-loader-rotor: #fff;
     --rs-toggle-hover-bg: #c5c6c7;
     --rs-toggle-disabled-bg: #f7f7fa;
@@ -414,11 +413,11 @@ button {
     --rs-slider-hover-bar: #e5e5ea;
     --rs-slider-thumb-border: #2a4cbf !important;
     --rs-slider-thumb-bg: #fff;
-    --rs-slider-thumb-hover-shadow: 0 0 0 8px rgba(52,152,255,0.25);
+    --rs-slider-thumb-hover-shadow: 0 0 0 8px rgba(52, 152, 255, 0.25);
     --rs-slider-progress: #2a4cbf !important;
     --rs-uploader-item-bg: #d9d9d9;
     --rs-uploader-item-hover-bg: #f7f7fa;
-    --rs-uploader-overlay-bg: hsla(0,0%,100%,0.8);
+    --rs-uploader-overlay-bg: hsla(0, 0%, 100%, 0.8);
     --rs-uploader-dnd-bg: #fff;
     --rs-uploader-dnd-border: #e5e5ea;
     --rs-uploader-dnd-hover-border: #2a4cbf !important;
@@ -429,26 +428,29 @@ button {
     --rs-tag-bg: #f7f7fa;
     --rs-tag-close: #f44336;
     --rs-carousel-bg: #8e8e93;
-    --rs-carousel-indicator: hsla(0,0%,100%,0.4);
+    --rs-carousel-indicator: hsla(0, 0%, 100%, 0.4);
     --rs-carousel-indicator-hover: #fff;
     --rs-carousel-indicator-active: #2a4cbf !important;
-    --rs-panel-shadow: 0 4px 4px rgba(0,0,0,0.12),0 0 10px rgba(0,0,0,0.06);
+    --rs-panel-shadow: 0 4px 4px rgba(0, 0, 0, 0.12),
+        0 0 10px rgba(0, 0, 0, 0.06);
     --rs-list-bg: #fff;
     --rs-list-border: #e5e5ea;
     --rs-list-hover-bg: #f2faff;
-    --rs-list-placeholder-bg: rgba(242,250,255,0.5);
+    --rs-list-placeholder-bg: rgba(242, 250, 255, 0.5);
     --rs-list-placeholder-border: #2a4cbf !important;
     --rs-timeline-indicator-bg: #d9d9d9;
     --rs-timeline-indicator-active-bg: #2a4cbf !important;
-    --rs-table-shadow: rgba(9,9,9,0.08);
+    --rs-table-shadow: rgba(9, 9, 9, 0.08);
     --rs-table-sort: #2a4cbf !important;
     --rs-table-resize: #2a4cbf !important;
     --rs-table-scrollbar-track: #e5e5ea;
     --rs-table-scrollbar-thumb: #575757;
     --rs-table-scrollbar-thumb-active: #272c36;
-    --rs-table-scrollbar-vertical-track: rgba(229,229,234,0.4);
-    --rs-drawer-shadow: 0 4px 4px rgba(0,0,0,0.12),0 0 10px rgba(0,0,0,0.06);
-    --rs-modal-shadow: 0 4px 4px rgba(0,0,0,0.12),0 0 10px rgba(0,0,0,0.06);
+    --rs-table-scrollbar-vertical-track: rgba(229, 229, 234, 0.4);
+    --rs-drawer-shadow: 0 4px 4px rgba(0, 0, 0, 0.12),
+        0 0 10px rgba(0, 0, 0, 0.06);
+    --rs-modal-shadow: 0 4px 4px rgba(0, 0, 0, 0.12),
+        0 0 10px rgba(0, 0, 0, 0.06);
     --rs-form-errormessage-text: #f44336;
     --rs-form-errormessage-bg: #fff;
     --rs-form-errormessage-border: #e5e5ea;
@@ -457,10 +459,10 @@ button {
     --rs-picker-count-text: #fff;
     --rs-calendar-today-bg: #2a4cbf !important;
     --rs-calendar-today-text: #fff;
-    --rs-calendar-range-bg: rgba(204,233,255,0.5);
+    --rs-calendar-range-bg: rgba(204, 233, 255, 0.5);
     --rs-calendar-time-unit-bg: #f7f7fa;
     --rs-calendar-date-selected-text: #fff;
-    --rs-popover-shadow: 0 1px 8px rgba(0,0,0,0.12);
+    --rs-popover-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
 }
 
 pre {

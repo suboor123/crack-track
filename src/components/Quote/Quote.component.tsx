@@ -1,47 +1,38 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Quotes } from '../../library/quotes/quotes';
 
 interface Props {
-    multiple?: boolean
+    multiple?: boolean;
 }
 export default function Quote(props: Props) {
-    const [quote, setQuote] = useState("");
-    const [multipleQuotes, setMultipleQuotes] = useState([])
+    const [quote, setQuote] = useState('');
+    const [multipleQuotes, setMultipleQuotes] = useState([]);
 
     React.useEffect(() => {
         const getQuote = async () => {
             if (props.multiple) {
-                const quotes = await Quotes.generateMultiple()
-                setMultipleQuotes(quotes as any)
+                const quotes = await Quotes.generateMultiple();
+                setMultipleQuotes(quotes as any);
             } else {
-                const quoteText = await Quotes.generate()
-                setQuote(quoteText as any)
+                const quoteText = await Quotes.generate();
+                setQuote(quoteText as any);
             }
-        }
-        getQuote()
-    }, [])
+        };
+        getQuote();
+    }, []);
 
-
-    React.useEffect(() => {
-
-    }, [multipleQuotes.length]);
-
+    React.useEffect(() => {}, [multipleQuotes.length]);
 
     const _quote = () => {
         let count = 0;
         setInterval(() => {
             if (count === multipleQuotes.length - 1) {
-                count = 0
+                count = 0;
             }
             setQuote(multipleQuotes[count]);
             count++;
-        }, 2000)
-    }
+        }, 2000);
+    };
 
-
-    return (
-        <>
-            {quote}
-        </>
-    )
+    return <>{quote}</>;
 }

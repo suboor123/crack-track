@@ -1,13 +1,13 @@
 export interface User {
-    uid?: string
+    uid?: string;
     username: string;
     experience: number;
     programmingLanguages: string;
     image: string;
     aboutMe: string;
-    linkedInUrl?: string
-    role: UserRole
-    email: string
+    linkedInUrl?: string;
+    role: UserRole;
+    email: string;
 }
 
 export interface UserForm {
@@ -17,18 +17,17 @@ export interface UserForm {
     password: string;
     programmingLanguages: string;
     aboutMe: string;
-    type?: RoleType
+    type?: RoleType;
 }
 
-export type EditUserForm = Omit<UserForm, "password">;
+export type EditUserForm = Omit<UserForm, 'password'>;
 
 export enum UserRole {
-    Admin = "Admin",
-    User = "User"
+    Admin = 'Admin',
+    User = 'User',
 }
 
 export enum RoleType {
     Moderator = 'Moderator',
-    Owner = 'Owner'
+    Owner = 'Owner',
 }
-

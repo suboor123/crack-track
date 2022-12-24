@@ -1,10 +1,10 @@
-import { ReactNode } from "react"
+import { ReactNode } from 'react';
 
 export interface ITag {
-    tagName: string
+    tagName: string;
 }
 
-export const TAG_PATH = 'tags'
+export const TAG_PATH = 'tags';
 
 export const tag_colors = [
     'red',
@@ -13,12 +13,12 @@ export const tag_colors = [
     'green',
     'cyan',
     'blue',
-    'violet'
-]
+    'violet',
+];
 
 export const getRandomTagColor = () => {
-    return tag_colors[Math.floor(Math.random()*tag_colors.length)]
-}
+    return tag_colors[Math.floor(Math.random() * tag_colors.length)];
+};
 
 export interface ItemDataType {
     /** The value of the option corresponds to the `valueKey` in the data. **/
@@ -47,5 +47,5 @@ export interface ItemDataType {
     /**
      * Color of tags
      */
-    color?: string
+    color?: string;
 }
